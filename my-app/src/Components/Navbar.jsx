@@ -5,16 +5,16 @@ function Navbar() {
   return (
     <Flex
       minWidth="full"
-      minHeight="60px"
+      minHeight="80px"
       alignItems="center"
       gap="2"
-      py={2}
-      px={12}
-      bg="gray.300"
+      py={6}
+      px={4}
+      bg="white"
     >
       <Link to="/">
         <Box>
-          <Heading as="h3" size="lg" color="blue">
+          <Heading as="h4" fontFamily="cursive" size="lg" color="blue" >
             myFitnesspal
           </Heading>
         </Box>
@@ -22,9 +22,7 @@ function Navbar() {
       <Spacer />
       <HStack>
         <Link to="/login">
-          <Text fontSize="lg" fontWeight="bolder">
-            LOG IN
-          </Text>
+          <Text fontSize="lg" fontWeight="bolder">LOG IN</Text>
         </Link>
         <Link to="/signup" >
           <Text fontSize="lg" fontWeight="bolder" >SIGN UP</Text>

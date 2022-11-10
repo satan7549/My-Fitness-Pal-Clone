@@ -13,7 +13,7 @@ const initState = {
 
 function Login(){
       const { state, dispatch } = useContext(AuthContext);
-       console.log("login",state);
+      //  console.log("login",state);
       const [loginDetails, setLoginDetails] = useState(initState);
     
       const handleChange = (e) => {
@@ -102,7 +102,9 @@ function Login(){
                 placeholder="Enter password"
               />
           </FormControl>
+          <FormControl >
           <Link  >Forgot Password ?</Link>
+          </FormControl>
           <FormControl>
             <Center>
               <Button
