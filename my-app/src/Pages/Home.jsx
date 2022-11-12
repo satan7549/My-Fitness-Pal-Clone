@@ -10,19 +10,23 @@ import {
   Button,
   Image,
   Flex,
+  Center,
 } from "@chakra-ui/react";
+import CardComp from "./CardComponent";
+import SliderDiv from "./Slider";
+import CardData from "./CardComp"
+import HeadingComp from "./HeadingComponent";
+import Footer from "./Footer";
+
+
 
 function Home() {
+
+
+
+
   return (
-    // <Container
-    //   width={{
-    //     base: "full",
-    //     sm: "full",
-    //     md: "container.xl",
-    //     lg: "container.lg",
-    //   }}
-    //   centerContent={true}
-    // >
+    
       <VStack width={{
         base:"full",
         sm:"full",
@@ -157,22 +161,30 @@ function Home() {
               </GridItem>
             </Grid>
           </Box>
-
-          <Box mt={50} width="full" alignItems="center" justifyContent="center">
-            <Heading as="h1" fontWeight="bold" fontSize="6xl" >Victory Stories</Heading>
-            <Text as="p" textAlign="center" fontSize="xl"  >
-            Every day, more than 3,000 members reach their goals with 
-            <br/>
-             MyFitnessPal. Get inspired for the journey ahead.
-            </Text>
+          <HeadingComp H="Victory Stories" P=" Every day, more than 3,000 members reach their goals with 
+             MyFitnessPal. Get inspired for the journey ahead." />
+          <Box width="full"  >
+            <SliderDiv />
+            <Button bg="blue" color="white" mt="50px"  >START YOUR JURNY TODAY</Button>
           </Box>
-          <Box>
-            
+          <HeadingComp H="Recipes & Inspiration" P=" Get nutritionist-approved recipes and motivational workout tips from MyFitnessPal experts. "/>
+          <Box p={30} >
+            <Grid templateColumns="repeat(3,1fr)" gap={6}>
+              {
+                CardData.map((ele,i)=>(<CardComp key={i+1} src={ele.src} id={i+1} h={ele.h} p={ele.p} />))
+              }
+            </Grid>
           </Box>
-
+          <HeadingComp H="Connect with over 50 apps." P="Easily link your MyFitnessPal account with apps that support your healthier lifestyle. It’s not just about calories. It’s about feeling better, looking better, and living better." />
+          <Center >
+            <Image w="60%"  mt="50px" src="https://www.myfitnesspal.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-apps%402x.85e549ef.png&w=1920&q=75" alt="last" />
+          </Center>
+          <Center>
+            <Text mt="50px" as="p" maxW="40rem" >MyFitnessPal is one of the best weight loss apps and fitness apps, helping nearly 1 million members reach their nutrition and fitness goals every year. Members use it as a calories tracker and calorie counter to log their foods, and take advantage of the app’s food database that contains over 14 million foods. It’s not just a free calorie counter app — it’s also the best calorie counter app for people who are looking to take back control of their health and fitness.</Text>
+          </Center>
         </VStack>
+        <Footer />
       </VStack>
-    // </Container>
   );
 }
 

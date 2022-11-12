@@ -1,6 +1,6 @@
 
-import { Box, Flex, Heading, HStack, Spacer, Text } from "@chakra-ui/react";
-import { useState } from "react";
+import { Flex, HStack, Text } from "@chakra-ui/react";
+
 import { Link } from "react-router-dom";
 
 function Navbar1() {
