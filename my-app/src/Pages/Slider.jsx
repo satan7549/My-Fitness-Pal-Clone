@@ -10,14 +10,19 @@ return(
         md: "container.xl",
         lg: "container.lg",
       }}
-      centerContent={true}
+    height="200px" 
+    centerContent={true}
     mt="50px"
+    borderWidth='1px'
+    borderRadius='lg' 
+    boxShadow="dark-lg"
+    overflow='hidden'
     >
-        <Flex direction="row" height="full" >
-            <Box height="full" >
-            <Image src="https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fhome%2Fvictory-story-3.jpg&w=1920&q=75" alt="Clint_pic" />
+        <Flex direction="row" height="full" p="2" gap={2}  >
+            <Box width="30%" >
+            <Image height="full" width="full" src="https://www.myfitnesspal.com/_next/image?url=%2Fpages%2Fhome%2Fvictory-story-3.jpg&w=1920&q=75" alt="Clint_pic" />
             </Box>
-            <Box>
+            <Box width="70%" >
                 <Flex direction="column">
                    <Heading as="h1" fontWeight="bold" fontSize="xl" > Education helped her lose 30 pounds.</Heading>
                    <Text as="p" textAlign="center" fontSize="xl" >

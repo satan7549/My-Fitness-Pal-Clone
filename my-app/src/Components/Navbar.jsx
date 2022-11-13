@@ -14,7 +14,7 @@ function Navbar() {
     >
       <Link to="/">
         <Box>
-          <Heading as="h4" fontFamily="cursive" size="lg" color="blue" >
+          <Heading as="h4" fontFamily="cursive" size="lg" color="#0a5282" >
             myFitnesspal
           </Heading>
         </Box>
