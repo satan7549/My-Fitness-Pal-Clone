@@ -12,11 +12,11 @@ import {
   Flex,
   Center,
 } from "@chakra-ui/react";
-import CardComp from "./CardComponent";
-import SliderDiv from "./Slider";
-import CardData from "./CardComp"
-import HeadingComp from "./HeadingComponent";
-import Footer from "./Footer";
+import CardComp from "../CardComponent";
+import SliderDiv from "../Slider";
+import CardData from "../CardComp"
+import HeadingComp from "../HeadingComponent";
+import Footer from "../Footer/Footer";
 
 
 
@@ -26,7 +26,13 @@ function Home() {
 
 
   return (
-    
+    <Center 
+    width={{
+      base:"full",
+      sm:"full",
+      lg:"full"
+    }}
+    >
       <VStack width={{
         base:"full",
         sm:"full",
@@ -185,6 +191,7 @@ function Home() {
         </VStack>
         <Footer />
       </VStack>
+    </Center> 
   );
 }
 

@@ -4,7 +4,7 @@ import { Box, Flex, Heading,Image ,Text} from "@chakra-ui/react"
 
 function CardComp({src,id,h,p}){
     return(
-        <Box maxW='sm' borderWidth='1px' borderRadius='lg' overflow='hidden'>
+        <Box maxW='sm' borderWidth='1px' borderRadius='lg' boxShadow="base" overflow='hidden'>
             <Flex direction="Column"  justifyContent="space-around" gap={3} >
                 <Box>
                 <Image src={src} alt={id} />

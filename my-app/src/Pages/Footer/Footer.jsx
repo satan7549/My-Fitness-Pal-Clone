@@ -1,4 +1,4 @@
-import { Box, Center, Flex, HStack, Link, Text } from "@chakra-ui/react";
+import { Box, Center, Flex, Link, Text } from "@chakra-ui/react";
 
 function Footer() {
   const TextStyle = {
@@ -6,11 +6,9 @@ function Footer() {
   };
 
   return (
-    <Box width="full" mt={10} bg="gray.100" maxH="200px" p={10} >
-      <Center>
-        <Flex minHeight="30px" alignItems="center" gap="2" py={2} px={12}>
-          <HStack gap={7} alignItems="center" justifyContent="space-around">
-            {/* <Flex direction="row" gap={7} alignItems="center" justifyContent="space-around"> */}
+    <Box width="full" mt={10}  bg="gray.100" maxH="200px" p={10} >
+      <Center >
+        <Flex minHeight="30px" flexWrap="wrap" alignItems="center" gap="6" py={2} px={12}>
             <Link to="/login">
               <Text style={{ TextStyle }}>ABOUT</Text>
             </Link>
@@ -32,14 +30,10 @@ function Footer() {
             <Link to="/signup">
               <Text style={{ TextStyle }}>PREMIUM</Text>
             </Link>
-            {/* </Flex> */}
-          </HStack>
         </Flex>
       </Center>
       <Center>
-        <Flex maxW="40rem" minHeight="30px" alignItems="center" gap="2">
-          <HStack gap={3} alignItems="center" justifyContent="space-around">
-            {/* <Flex direction="row" gap={7} alignItems="center" justifyContent="space-around"> */}
+        <Flex maxW="40rem" minHeight="30px" flexWrap="wrap" alignItems="center" gap="2">
             <Link to="">
               <Text
                 as="p"
@@ -130,8 +124,6 @@ function Footer() {
                 Community Guidlines
               </Text>
             </Link>
-            {/* </Flex> */}
-          </HStack>
         </Flex>
       </Center>
     </Box>

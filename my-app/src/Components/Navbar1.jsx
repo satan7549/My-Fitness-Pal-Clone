@@ -13,29 +13,29 @@ function Navbar1() {
       gap="2"
       py={2}
       px={12}
-      bg="blue"
+      bg="#0a5282"
     >
       <HStack gap={7} alignItems="center" justifyContent="space-around" >
         {/* <Flex direction="row" gap={7} alignItems="center" justifyContent="space-around"> */}
-        <Link to="/login">
+        <Link to="/about">
           <Text color="white" fontSize="lg" fontWeight="bolder">ABOUT</Text>
         </Link>
-        <Link to="/signup" >
+        <Link to="/food" >
           <Text color="white" fontSize="lg" fontWeight="bolder" >FOOD</Text>
         </Link>
-        <Link to="/signup" >
+        <Link to="" >
           <Text color="white" fontSize="lg" fontWeight="bolder" >EXERCISE</Text>
         </Link>
-        <Link to="/signup" >
+        <Link to="" >
           <Text color="white" fontSize="lg" fontWeight="bolder" >APPS</Text>
         </Link>
-        <Link to="/signup" >
+        <Link to="" >
           <Text color="white" fontSize="lg" fontWeight="bolder" >COMMUNITY</Text>
         </Link>
-        <Link to="/signup" >
+        <Link to="" >
           <Text color="white" fontSize="lg" fontWeight="bolder" >BLOGS</Text>
         </Link>
-        <Link to="/signup" >
+        <Link to="" >
           <Text color="white" fontSize="lg" fontWeight="bolder" >PREMIUM</Text>
         </Link>
         {/* </Flex> */}
