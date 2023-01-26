@@ -1,7 +1,7 @@
 # My Fitness Pal Clone
 
-## 🔗 Links
-netlify link -
+# Deployed Link:- https://glittering-liger-3137f9.netlify.app/
+
 
 ### Pages are:
 
@@ -16,8 +16,10 @@ netlify link -
 
 * HTML
 * CSS
+* Chakra UI
 * React
 * Github
+* axios
 
 ## Screenshots
 
