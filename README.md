@@ -1,6 +1,6 @@
 # My Fitness Pal Clone
 
-# Deployed Link:- https://glittering-liger-3137f9.netlify.app/
+## Deployed Link:- https://glittering-liger-3137f9.netlify.app/
 
 
 ### Pages are:
