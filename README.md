@@ -18,7 +18,6 @@
 * CSS
 * Chakra UI
 * React
-* Github
 * axios
 
 ## Screenshots
